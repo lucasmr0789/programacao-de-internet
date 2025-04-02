@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+table {
+    width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+}
+td {
+    padding: 2px;
+    text-align: center;
+} 
+th{
+    background-color: #0D5188;
+    color: white;
+    font-weight: bold;
+}
+.cidade {
+    color: #0D5188;
+    font-weight: bold;
+    color: white;
+}
+}
+.posicao {
+    background-color: silver;
+    width: 10%;
+}
+.populacao {
+    width: 15%;
+}
+.header {
+    background-color: #0D5188;
+    color: white;
+    font-weight: bold;
+}
+.linha1 {
+    background-color: #66C5E3;
+}
+.linha2 {
+    background-color: #C7E7F3;
+}
+
+
