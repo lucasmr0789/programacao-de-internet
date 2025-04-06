@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+table.classificacao {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #DDDDDD;
+}
+
+.classificacao th, .classificacao td {
+    border: 1px solid #DDDDDD;
+    padding: 8px;
+}
+
+.classificacao th {
+    font-size: 13px;
+    color: #999999;
+    font-weight: bold;
+    text-align: center;
+}
+
+.classificacao td {
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+}
+
+.classificacao td:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Cores para classificação */
+.libertadores td:first-child {
+    color: #003366; /* Azul-marinho */
+}
+.pre-libertadores td:first-child {
+    color: #3399FF; /* Azul-celeste */
+}
+.sulamericana td:first-child {
+    color: #FF9900; /* Laranja */
+}
+.rebaixamento td:first-child {
+    color: #CC0000; /* Vermelho */
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(odd) {
+    background-color: #F7F7F7;
+}
+
+
+
