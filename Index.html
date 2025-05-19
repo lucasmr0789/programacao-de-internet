@@ -1,22 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora de Valor por Quilo</title>
+  <meta charset="UTF-8"
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h2>Calculadora de Valor por Quilo</h2>
-
-  <label>Valor por quilo (R$):</label>
-  <input type="number" id="valorQuilo" step="0.01"><br><br>
-
-  <label>Quantidade (kg):</label>
-  <input type="number" id="quantidadeKg" step="0.01"><br><br>
-
-  <button onclick="calcularValorFinal()">Calcular Valor Final</button>
-
-  <p id="resultado"></p>
-
-  <script src="script.js"></script>
+  <h2>-Reajuste de saldo</h2>
+  <input type="number" id="saldo" placeholder="Digite o saldo">
+  <button onclick="ex3()">Calcular reajuste</button>
+  <p id="res3"></p>
 </body>
 </html>
