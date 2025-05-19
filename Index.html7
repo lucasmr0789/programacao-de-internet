@@ -6,7 +6,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h2>Exercício 7 - Salário com comissão</h2>
+  <h2>- Salário com comissão</h2>
   <input type="number" id="fixo" placeholder="Salário fixo">
   <input type="number" id="vendas" placeholder="Total de vendas (R$)">
   <button onclick="ex7()">Calcular salário final</button>
