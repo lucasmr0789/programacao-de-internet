@@ -1,0 +1,15 @@
+function ex6() {
+  let v1 = parseFloat(document.getElementById('v1').value);
+  let v2 = parseFloat(document.getElementById('v2').value);
+  let v3 = parseFloat(document.getElementById('v3').value);
+  let v4 = parseFloat(document.getElementById('v4').value);
+
+  if (isNaN(v1) || isNaN(v2) || isNaN(v3) || isNaN(v4)) {
+    document.getElementById('res6').innerText = "Preencha todos os valores corretamente.";
+    return;
+  }
+
+  let menor = Math.min(v1, v2, v3, v4);
+
+  document.getElementById('res6').innerText = "O menor valor é: " + menor;
+}
