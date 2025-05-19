@@ -1,0 +1,21 @@
+function ex4() {
+  let n1 = parseFloat(document.getElementById('n1').value);
+  let n2 = parseFloat(document.getElementById('n2').value);
+  let n3 = parseFloat(document.getElementById('n3').value);
+
+  if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+    document.getElementById('res4').innerText = "Preencha os 3 números corretamente.";
+    return;
+  }
+
+  let mediaAritmetica = (n1 + n2 + n3) / 3;
+  let mediaPonderada = (n1 * 3 + n2 * 2 + n3 * 5) / 10;
+  let soma = mediaAritmetica + mediaPonderada;
+  let mediaDasMedias = soma / 2;
+
+  document.getElementById('res4').innerText =
+    "Média Aritmética: " + mediaAritmetica.toFixed(2) + "\n" +
+    "Média Ponderada: " + mediaPonderada.toFixed(2) + "\n" +
+    "Soma das Médias: " + soma.toFixed(2) + "\n" +
+    "Média das Médias: " + mediaDasMedias.toFixed(2);
+}
