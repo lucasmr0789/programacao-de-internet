@@ -1,0 +1,22 @@
+function calcularOperacoes() {
+    const num1 = parseFloat(document.getElementById('num1').value);
+    const num2 = parseFloat(document.getElementById('num2').value);
+    const resultado = document.getElementById('resultado');
+
+    if (isNaN(num1) || isNaN(num2)) {
+        resultado.innerHTML = "Por favor, insira dois números válidos.";
+        return;
+    }
+
+    const soma = num1 + num2;
+    const subtracao = num1 - num2;
+    const multiplicacao = num1 * num2;
+    const divisao = num2 !== 0 ? (num1 / num2).toFixed(2) : "Indefinida (divisão por zero)";
+
+    resultado.innerHTML = `
+        <p>Soma: ${soma}</p>
+        <p>Subtração: ${subtracao}</p>
+        <p>Multiplicação: ${multiplicacao}</p>
+        <p>Divisão: ${divisao}</p>
+    `;
+}
