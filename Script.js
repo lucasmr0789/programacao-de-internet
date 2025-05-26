@@ -1,0 +1,19 @@
+function calcularCotacao() {
+    const cotacao = parseFloat(document.getElementById('cotacao').value);
+    const resultados = document.getElementById('resultados');
+    
+    if (isNaN(cotacao)) {
+        resultados.innerHTML = "Por favor, insira um valor válido.";
+        return;
+    }
+
+    const percentuais = [1, 2, 5, 10];
+    let texto = "";
+
+    percentuais.forEach(percentual => {
+        const valor = cotacao * (1 + percentual / 100);
+        texto += `<p>Com aumento de ${percentual}%: R$ ${valor.toFixed(2)}</p>`;
+    });
+
+    resultados.innerHTML = texto;
+}
