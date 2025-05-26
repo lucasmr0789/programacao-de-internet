@@ -1,0 +1,18 @@
+function calcularIngredientes() {
+    const pessoas = parseInt(document.getElementById('pessoas').value);
+    const resultado = document.getElementById('resultado');
+
+    if (isNaN(pessoas) || pessoas <= 0) {
+        resultado.innerHTML = "Por favor, insira um número válido de pessoas.";
+        return;
+    }
+
+    const ovos = pessoas * 2;
+    const queijo = pessoas * 50;
+
+    resultado.innerHTML = `<p>Para ${pessoas} pessoa(s), será necessário:</p>
+                           <ul>
+                               <li>${ovos} ovos</li>
+                               <li>${queijo} gramas de queijo</li>
+                           </ul>`;
+}
